@@ -1,0 +1,79 @@
+body {
+  overflow: hidden;
+  background-color: black;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+.wrapper .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  z-index: 1;
+}
+.wrapper .overlay__intro {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .overlay__intro .para {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .9em;
+}
+.wrapper .overlay__intro .bg__text {
+  font-family: "Helvetica";
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4.5em;
+  opacity: .4;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.04);
+}
+.wrapper .overlay__intro .rect {
+  background-color: #fff;
+  width: 100vw;
+  height: 1px;
+  position: absolute;
+}
+.wrapper header {
+  margin: 0 auto;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper header .header__inner {
+  z-index: 3;
+}
+.wrapper header .header__inner .header__para {
+  position: absolute;
+  bottom: 50px;
+  font-size: 14px;
+  font-weight: 100;
+  color: rgba(19, 17, 19, 0.5);
+}
+.wrapper header .header__inner .header__para span {
+  color: #f0353c;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* for main body */
